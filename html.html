@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Safari</title>
+    <link rel="stylesheet" href="style_main.css">
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <!-- Logo -->
+        <div class="logo">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+            <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+          </svg> -->
+          <span class="logo-text">Code Safari🌴</span>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav">
+          <div class="nav-section">
+            <h3 class="nav-title">Main</h3>
+            <button class="nav-item active" data-page="dashboard">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+              <span>Dashboard</span>
+            </button>
+            <button class="nav-item" data-page="video-lessons">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m22 8-6 4 6 4V8Z"/>
+                <rect x="2" y="6" width="14" height="12" rx="2" ry="2"/>
+              </svg>
+              <span>Video Lessons</span>
+            </button>
+            <button class="nav-item" data-page="python-assistant">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 8V4H8"/>
+                <rect x="4" y="4" width="16" height="16" rx="2"/>
+                <path d="M2 14h2"/>
+                <path d="M20 14h2"/>
+                <path d="M15 13v2"/>
+                <path d="M9 13v2"/>
+              </svg>
+              <span>Python Assistant</span>
+            </button>
+          </div>
+
+          <div class="nav-section">
+            <h3 class="nav-title">Learning</h3>
+            <button class="nav-item" data-page="code-games">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="6" y1="11" x2="10" y2="11"/>
+                <line x1="8" y1="9" x2="8" y2="13"/>
+                <line x1="15" y1="12" x2="15" y2="12"/>
+                <line x1="18" y1="10" x2="18" y2="10"/>
+                <path d="M17.6 14h.012"/>
+                <rect x="2" y="6" width="20" height="12" rx="2"/>
+              </svg>
+              <span>Code Games</span>
+            </button>
+            <button class="nav-item" data-page="my-courses">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+              <span>My Courses</span>
+            </button>
+            <button class="nav-item" data-page="achievements">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                <path d="M4 22h16"/>
+                <path d="M10 14.66V17c0 .55-.47.98-.97.93l-2-.2c-.41-.04-.753-.34-.793-.75L6 14.77a.993.993 0 0 1 .99-1.077H9c.55 0 1 .45 1 1v-.033"/>
+                <path d="M14 14.66V17c0 .55.47.98.97.93l2-.2c.41-.04.753-.34.793-.75L18 14.77a.993.993 0 0 0-.99-1.077H15c-.55 0-1 .45-1 1v-.033"/>
+                <path d="M12 8v4"/>
+                <path d="M12 3v3"/>
+              </svg>
+              <span>Achievements</span>
+            </button>
+          </div>
+
+          <div class="nav-section">
+            <h3 class="nav-title">Progress</h3>
+            <button class="nav-item" data-page="my-progress">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18"/>
+                <path d="m19 9-5 5-4-4-3 3"/>
+              </svg>
+              <span>My Progress</span>
+            </button>
+            <button class="nav-item" data-page="settings">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
+                <circle cx="12" cy="12" r="3"/>
+              </svg>
+              <span>Settings</span>
+            </button>
+            <button class="nav-item" data-page="help-support">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                <path d="M12 17h.01"/>
+              </svg>
+              <span>Help & Support</span>
+            </button>
+          </div>
+        </nav>
+
+        <!-- Logout -->
+        <button class="logout">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+            <polyline points="16 17 21 12 16 7"/>
+            <line x1="21" y1="12" x2="9" y2="12"/>
+          </svg>
+          <span>Logout</span>
+        </button>
+      </aside>
+
+      <main class="main-content">
+        <!-- Dashboard Page -->
+        <div id="dashboard" class="page active">
+          <h1>Welcome to Code Safari <span id="dashboard-username">Explorer</span>!</h1>
+          <p class="subtitle">Your journey through the coding jungle starts here!</p>
+          
+          <div class="dashboard-grid">
+            <div class="dashboard-card">
+              <h3>Current Progress</h3>
+              <div class="progress-bar">
+                <div class="progress" style="width: 65%"></div>
+              </div>
+              <p>65% Complete</p>
+            </div>
+            
+            <div class="dashboard-card">
+              <h3>Next Lesson</h3>
+              <p>Python Fundamentals: Lists and Tuples</p>
+              <br>
+              <button class="btn">Continue Learning</button>
+            </div>
+            
+            <div class="dashboard-card">
+              <h3>Recent Achievements</h3>
+              <br>
+              <ul class="achievement-list">
+                <li>🏆 Completed Basic Python</li>
+                <li>🌟 First Code Review</li>
+                <li>💪 7-Day Streak</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Lessons Page -->
+        <div id="video-lessons" class="page">
+          <h1>Video Lessons</h1>
+          <p class="subtitle">Learn through comprehensive video tutorials</p>
+          
+          <div class="video-grid">
+            <div class="video-card">
+              <div class="video-thumbnail"></div>
+              <h3>Introduction to Python</h3>
+              <p>Learn the basics of Python programming</p>
+              <span class="duration">45 mins</span>
+            </div>
+            
+            <div class="video-card">
+              <div class="video-thumbnail"></div>
+              <h3>Web Development Basics</h3>
+              <p>HTML, CSS, and JavaScript fundamentals</p>
+              <span class="duration">60 mins</span>
+            </div>
+            
+            <div class="video-card">
+              <div class="video-thumbnail"></div>
+              <h3>Data Structures</h3>
+              <p>Understanding arrays and linked lists</p>
+              <span class="duration">55 mins</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Python Assistant Page -->
+   
+        <div id="python-assistant" class="page">
+          <h1>Python Assistant</h1>
+          <p class="subtitle">Your AI-powered Python learning companion</p>
+          
+          <div class="chat-container">
+            <div class="chat-messages">
+              <!-- Messages will be added here dynamically -->
+            </div>
+            
+            <div class="chat-input">
+              <textarea placeholder="Ask me anything about Python..." class="message-input"></textarea>
+              <button class="btn send-message">Send</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Code Games Page -->
+        <div id="code-games" class="page">
+          <h1>Code Games</h1>
+          <p class="subtitle">Learn coding through fun interactive games</p>
+          
+          <div class="games-grid">
+            <div class="game-card">
+              <h3>Python Snake</h3>
+              <p>Build a classic snake game while learning Python</p>
+              <br>
+              <button class="btn">Play Now</button>
+            </div>
+            
+            <div class="game-card">
+              <h3>CSS Garden</h3>
+              <p>Practice CSS by styling a virtual garden</p>
+              <br>
+              <button class="btn">Play Now</button>
+            </div>
+            
+            <div class="game-card">
+              <h3>Algorithm Adventure</h3>
+              <p>Learn algorithms through puzzle-solving</p>
+              <br>
+              <button class="btn">Play Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- My Courses Page -->
+        <div id="my-courses" class="page">
+          <h1>My Courses</h1>
+          <p class="subtitle">Track your enrolled courses and progress</p>
+          
+          <div class="courses-grid">
+            <div class="course-card">
+              <div class="course-progress">75%</div>
+              <h3>Python Mastery</h3>
+              <p>Advanced Python programming concepts</p>
+              <br>
+              <button class="btn">Continue</button>
+            </div>
+            
+            <div class="course-card">
+              <div class="course-progress">30%</div>
+              <h3>Web Development</h3>
+              <p>Full-stack web development course</p>
+              <br>
+              <button class="btn">Continue</button>
+            </div>
+            
+            <div class="course-card">
+              <div class="course-progress">90%</div>
+              <h3>Data Structures</h3>
+              <p>Essential computer science concepts</p>
+              <br>
+              <button class="btn">Continue</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements Page -->
+        <div id="achievements" class="page">
+          <h1>Achievements</h1>
+          <p class="subtitle">Your coding milestones and badges</p>
+          
+          <div class="achievements-grid">
+            <div class="achievement-card">
+              <div class="badge">🏆</div>
+              <h3>Python Master</h3>
+              <p>Completed all Python courses</p>
+            </div>
+            
+            <div class="achievement-card locked">
+              <div class="badge">🌟</div>
+              <h3>Web Wizard</h3>
+              <p>Complete the web development track</p>
+            </div>
+            
+            <div class="achievement-card">
+              <div class="badge">💪</div>
+              <h3>30-Day Streak</h3>
+              <p>Coded for 30 days in a row</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- My Progress Page -->
+        <div id="my-progress" class="page">
+          <h1>My Progress</h1>
+          <p class="subtitle">Track your learning journey</p>
+          
+          <div class="progress-stats">
+            <div class="stat-card">
+              <h3>Courses Completed</h3>
+              <div class="stat">12</div>
+            </div>
+            
+            <div class="stat-card">
+              <h3>Hours Learned</h3>
+              <div class="stat">156</div>
+            </div>
+            
+            <div class="stat-card">
+              <h3>Current Streak</h3>
+              <div class="stat">7 days</div>
+            </div>
+          </div>
+          
+          <div class="progress-chart">
+            <h3>Learning Activity</h3>
+            <div class="chart-placeholder"></div>
+          </div>
+        </div>
+
+        <!-- Settings Page -->
+        <div id="settings" class="page">
+          <h1>Settings</h1>
+          <p class="subtitle">Customize your learning experience</p>
+          
+          <div class="settings-section">
+            <h3>Account Settings</h3>
+            <div class="setting-item">
+              <label>Email Notifications</label>
+              <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider"></span>
+              </label>
+            </div>
+            
+            <div class="setting-item">
+              <label>Dark Mode</label>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+            </div>
+            
+            <div class="setting-item">
+              <label>Language</label>
+              <select>
+                <option>English</option>
+                <option>Spanish</option>
+                <option>French</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Help & Support Page -->
+        <div id="help-support" class="page">
+          <h1>Help & Support</h1>
+          <p class="subtitle">Get assistance with your learning journey</p>
+          
+          <div class="help-section">
+            <div class="faq-section">
+              <h3>Frequently Asked Questions</h3>
+              <div class="faq-item">
+                <h4>How do I reset my password?</h4>
+                <p>Click on the "Forgot Password" link on the login page and follow the instructions sent to your email.</p>
+              </div>
+              <div class="faq-item">
+                <h4>How do I track my progress?</h4>
+                <p>Visit the "My Progress" section to view detailed statistics about your learning journey.</p>
+              </div>
+            </div>
+            
+            <div class="contact-section">
+              <h3>Contact Support</h3>
+              <form class="contact-form">
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Describe your issue..."></textarea>
+                <button class="btn">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="auth.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+
+
+  </body>
+</html>
