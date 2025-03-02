@@ -28,7 +28,7 @@ http://localhost:5500
 
 ## Firebase Integration
 
-This project is configured to work with Firebase for authentication and data storage. Make sure to set up your Firebase project and update the configuration in the appropriate files.
+This project is configured to work with Firebase for authentication .
 
 ## Requirements
 
