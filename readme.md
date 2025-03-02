@@ -35,9 +35,3 @@ This project is configured to work with Firebase for authentication and data sto
 No external Python packages are required to run the development server. The application uses:
 
 - Python 3.x (for the development server)
-- Modern web browser
-- Firebase account (for authentication and database)
-
-## License
-
-[Add your license information here]
