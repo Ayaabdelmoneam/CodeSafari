@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Safari</title>
     <link rel="stylesheet" href="style_main.css">
+    <!-- Add syntax highlighting -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   </head>
   <body>
     <div class="layout">
@@ -68,6 +72,17 @@
                 <path d="M6 12v5c3 3 9 3 12 0v-5"/>
               </svg>
               <span>My Courses</span>
+            </button>
+            <button class="nav-item" data-page="exercises">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="10" y1="13" x2="14" y2="13"/>
+                <line x1="10" y1="17" x2="14" y2="17"/>
+                <line x1="8" y1="13" x2="8" y2="13"/>
+                <line x1="8" y1="17" x2="8" y2="17"/>
+              </svg>
+              <span>Exercises</span>
             </button>
             <button class="nav-item" data-page="achievements">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -379,14 +394,45 @@
             </div>
           </div>
         </div>
+        
+        <!-- Exercises Page -->
+        <div id="exercises" class="page">
+          <h1>Python Exercises</h1>
+          <p class="subtitle">Test your Python skills through interactive quizzes!</p>
+          
+          <div class="exercises-container">
+            <div id="quiz-start" class="quiz-start">
+              <h2>Ready to Challenge Yourself?</h2>
+              <p>Click the button below to start the Python quiz!</p>
+              <button id="start-quiz-btn" class="btn">Start Quiz</button>
+            </div>
+
+            <div id="quiz-container" class="quiz-container" style="display:none;">
+              <div id="question-container" class="question-container">
+                <h2 id="question-text">Question will appear here</h2>
+                <div id="answer-buttons" class="answer-buttons">
+                  <button class="btn answer-btn">Answer 1</button>
+                  <button class="btn answer-btn">Answer 2</button>
+                  <button class="btn answer-btn">Answer 3</button>
+                  <button class="btn answer-btn">Answer 4</button>
+                </div>
+              </div>
+              <div id="result-container" class="result-container" style="display:none;">
+                <h2>Quiz Completed!</h2>
+                <p id="final-score">Your Score: 0/0</p>
+                <button id="restart-quiz-btn" class="btn">Try Again</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
 
     <script src="script.js"></script>
     <script src="auth.js" defer></script>
+    <script src="script1.js" defer></script>
+    <script src="script_bot.js" defer></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
-
-
   </body>
 </html>
